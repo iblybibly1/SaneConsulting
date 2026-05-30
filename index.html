@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>Sane Consulting — Arkkitehtoninen projektinhallinta</title>
-  <meta name="description" content="Sane Consulting tarjoaa arkkitehtonista projektinhallintaa huolellisella suunnittelulla, rakenteellisella huippuosaamisella ja asiantuntevalla työmaavalvonnalla ensimmäisestä luonnoksesta lopulliseen luovutukseen."/>
+  <meta name="description" content="Sane Consulting tarjoaa arkkitehtonista projektinhallintaa huolellisella suunnittelulla, rakenteellisella huippuosaamisella ja asiantuntevalla työmaavalvonnalla."/>
   <meta name="keywords" content="Sane Consulting, arkkitehtoninen projektinhallinta, rakennusvalvonta, budjettinhallinta, työmaavalvonta"/>
   <meta property="og:title" content="Sane Consulting — Arkkitehtoninen projektinhallinta"/>
   <meta property="og:description" content="Rakennusprojektien hallintaa niille, jotka arvostavat mielenrauhaa ja rakenteellista huippulaatua."/>
@@ -14,7 +14,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 
   <!-- GSAP -->
@@ -25,38 +25,25 @@
 </head>
 <body>
 
-  <!-- Cursor -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-follower" id="cursorFollower"></div>
-
-  <!-- Page loader -->
-  <div class="loader" id="loader">
-    <div class="loader-inner">
-      <span class="loader-wordmark">Sane</span>
-      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
-    </div>
-  </div>
-
   <!-- HEADER -->
   <header class="site-header" id="mainNav">
     <div class="header-inner">
       <a class="wordmark" href="#">Sane Consulting</a>
 
-      <nav class="nav-links" id="navLinks">
-        <a class="nav-link" href="#portfolio" data-nav>Portfolio</a>
-        <a class="nav-link" href="#methodology" data-nav>Menetelmä</a>
-        <a class="nav-link active" href="#expertise" data-nav>Asiantuntemus</a>
-        <a class="nav-link" href="#process" data-nav>Prosessi</a>
+      <nav class="nav-links">
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+        <a class="nav-link" href="#methodology">Menetelmä</a>
+        <a class="nav-link active" href="#expertise">Asiantuntemus</a>
+        <a class="nav-link" href="#process">Prosessi</a>
       </nav>
 
       <a class="btn-ghost nav-cta" href="#contact">Pyydä yhteydenotto</a>
 
       <button class="hamburger" id="hamburger" aria-label="Avaa valikko">
-        <span></span><span></span><span></span>
+        <span class="material-symbols-outlined">menu</span>
       </button>
     </div>
 
-    <!-- Mobile drawer -->
     <div class="mobile-menu" id="mobileMenu">
       <a href="#portfolio" class="mobile-link">Portfolio</a>
       <a href="#methodology" class="mobile-link">Menetelmä</a>
@@ -74,53 +61,28 @@
         <img
           class="hero-img"
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ-wzPTBHKXavwMt8Ex1zhpMc9CU5e03Fc6LrEPxIMyZ1SOClSFX0BuguMOuS47R59epwsUErIORaIyQadV7_SLXxfLrcQWH2lY-tM4uIPsT9jWxmHamegfFL8JLsAmxD_QCJbCn3JTQDO1ScfrR9F7YgwegZv-3sFUZjm3jX0wwglEVoWpdtfoGZL4Gdh51ZIfMNIdEUziUUi6-QkqfDRabIMvVVhz2uSmeBhjSa6DObYuNvt9ohVzhzpADHRTqbKurtSNY8IG9s"
-          alt="Minimalist architectural interior with floor-to-ceiling windows, concrete lines, moody lighting"
+          alt="Minimalistinen arkkitehtuurinen sisätila lattia-katto-ikkunoilla, betonirakenteet, tunnelmallinen valaistus"
         />
         <div class="hero-overlay"></div>
       </div>
-
       <div class="hero-content container">
         <div class="hero-text">
-          <span class="overline reveal-line" data-delay="0">Arkkitehtoninen projektinhallinta</span>
-          <h1 class="hero-heading">
-            <span class="reveal-line" data-delay="0.1">Visiosi,</span>
-            <span class="reveal-line italic" data-delay="0.2">Orkestroimme</span>
-            <span class="reveal-line" data-delay="0.3">täsmällisesti.</span>
+          <h1 class="hero-heading sc-line">
+            Visiosi,<br/>
+            <em>Orkestroimme</em><br/>
+            täsmällisesti.
           </h1>
-          <p class="hero-sub reveal-fade" data-delay="0.55">
+          <p class="hero-sub sc-fade">
             Rakennusprojektien hallintaa niille, jotka arvostavat<br/>
             mielenrauhaa ja rakenteellista huippulaatua.
           </p>
-          <div class="hero-actions reveal-fade" data-delay="0.7">
+          <div class="hero-actions sc-fade">
             <a class="btn-primary" href="#contact">
               Keskustele projektistasi
               <span class="material-symbols-outlined btn-icon">arrow_forward</span>
             </a>
-            <a class="btn-text" href="#expertise">Katso asiantuntemus</a>
           </div>
         </div>
-
-        <div class="hero-stat-row reveal-fade" data-delay="0.9">
-          <div class="hero-stat">
-            <span class="stat-number" data-count="150">0</span><span class="stat-plus">+</span>
-            <span class="stat-label">Valmistuneet projektit</span>
-          </div>
-          <div class="hero-stat-divider"></div>
-          <div class="hero-stat">
-            <span class="stat-number" data-count="18">0</span><span class="stat-plus">v</span>
-            <span class="stat-label">Alan kokemus</span>
-          </div>
-          <div class="hero-stat-divider"></div>
-          <div class="hero-stat">
-            <span class="stat-number" data-count="99">0</span><span class="stat-plus">%</span>
-            <span class="stat-label">Ajallaan toimitettu</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="scroll-hint reveal-fade" data-delay="1.1">
-        <span class="scroll-hint-line"></span>
-        <span class="scroll-hint-text">Vieritä</span>
       </div>
     </section>
 
@@ -140,58 +102,56 @@
             huolellisesta valmistautumisesta. Ennakoimalla haasteet ennen niiden
             ilmaantumista suojelemme sekä suunnittelun eheyttä että sijoitustasi.
           </p>
-          <div class="philosophy-tag-row sc-reveal">
-            <span class="tag">Rakenteellinen eheys</span>
-            <span class="tag">Tarkkuus</span>
-            <span class="tag">Luotettavuus</span>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- 3. EXPERTISE (BENTO) -->
+    <!-- 3. EXPERTISE -->
     <section class="expertise" id="expertise">
       <div class="container">
         <div class="section-header sc-reveal">
           <span class="overline">Asiantuntemus</span>
-          <h2 class="section-heading">Toiminnan<br/>ydinpilarit</h2>
+          <h2 class="section-heading">Toiminnan ydinpilarit</h2>
         </div>
 
         <div class="bento-grid">
-          <div class="bento-card bento-a sc-reveal-card">
+          <!-- Card A — large image -->
+          <div class="bento-card bento-a sc-card">
             <img
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEA6gFK_BcLUKUHqhQhFUxjAJqxcOhFGuQuqlE55FHtW-sZp64yjnPx-N8-ub6Rfcwo48Pe3Z_XALXGAnI-4QsmrkbpjQwvtOj1jlxkLAXAak8LUqvjHkaBPUb0ZTH7X1nV18fF1Mn1FRInQLtvfxebSpjj868vwqfvuocg6N5v21Ynh1iVqxa_0AsKnbdSWdRceQRUHlJXLN7P-6y1hivHOn-a7rZBf1XoFMuLVWgsozQbbAZHaC7voLlG5TMmFFejVDURHVnPuM"
-              alt="Moderni rakennustyömaa hämärässä — teräsrakenteet ja geometriset kuviot"
+              alt="Moderni rakennustyömaa hämärässä — teräsrakenteet"
               class="bento-img"
             />
-            <div class="bento-img-overlay"></div>
-            <div class="bento-card-body">
+            <div class="bento-overlay"></div>
+            <div class="bento-body">
               <h3 class="bento-title">Projektinhallinta</h3>
               <p class="bento-desc">Strateginen valvonta ensimmäisestä luonnoksesta valmistumiseen. Toimimme ehdottomana edustajasi työmaan edustajana.</p>
             </div>
           </div>
 
-          <div class="bento-card bento-b sc-reveal-card">
+          <!-- Card B — text -->
+          <div class="bento-card bento-b sc-card">
             <span class="material-symbols-outlined bento-icon">analytics</span>
             <h3 class="bento-title">Budjetti &amp; aikataulu</h3>
             <p class="bento-desc">
               Varmistamme jokaisen välietapin saavuttamisen kompromisseitta. Taloudellinen ennustaminen ja aikataulussa pysyminen kartoitettu rakenteellisella tarkkuudella.
             </p>
-            <div class="bento-card-footer">
+            <div class="bento-footer">
               <a class="link-arrow" href="#process">
                 Katso menetelmä <span class="material-symbols-outlined">arrow_outward</span>
               </a>
             </div>
           </div>
 
-          <div class="bento-card bento-c sc-reveal-card">
+          <!-- Card C — wide image -->
+          <div class="bento-card bento-c sc-card">
             <img
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4pi-0iotkY0fjmmXRyLvCywTKHR6GTlh051W-PyQav4_LREN02d58c1VjrfpBVmYJymTg7tsM0UIbt-5GuLfrmpChc83Z7ER6IYp0rsaD1wqQ1yn0SRu7hS97MVqUclC7OhWWJ9J6np_ePZPnaMyjIFwGlsp1IVGRy5yYIBUj28Kx6f52fot8GHN1Fbs8YEjthmmoO_-hrNAdzNHnffYZBZ-EZ_1BVAGXqi0VphhXFi_KJKa13qO0Rf1BdSqgVp4GC7DMFDlg1GM"
               alt="Arkkitehtoniset piirustukset tummalla puupöydällä premium-piirustusvälineiden kanssa"
               class="bento-img"
             />
-            <div class="bento-img-overlay bento-img-overlay--side"></div>
-            <div class="bento-card-body bento-card-body--side">
+            <div class="bento-overlay bento-overlay--side"></div>
+            <div class="bento-body bento-body--side">
               <span class="material-symbols-outlined bento-icon">engineering</span>
               <h3 class="bento-title">Työmaavalvonta</h3>
               <p class="bento-desc">Tiukka laadunvalvonta ja ammatilliset tarkastukset. Vaadimme arkkitehtonisen tarkoituksen tarkan toteutuksen.</p>
@@ -201,21 +161,21 @@
       </div>
     </section>
 
-    <!-- 4. PROCESS (TIMELINE) -->
+    <!-- 4. PROCESS -->
     <section class="process" id="process">
       <div class="container process-grid">
         <div class="process-sidebar">
           <span class="overline sc-reveal">Prosessi</span>
-          <h2 class="section-heading sc-reveal">Sane-<br/>menetelmä</h2>
+          <h2 class="section-heading sc-reveal">Sane-menetelmä</h2>
           <p class="body-md sc-reveal">
             Hienostunut vaiheittainen aikajana, joka on suunniteltu minimoimaan riskit ja nostamaan rakentamisen laatua järjestelmällisen valvonnan avulla.
           </p>
         </div>
 
         <div class="timeline">
-          <div class="timeline-track"></div>
+          <div class="timeline-line"></div>
 
-          <div class="timeline-step sc-timeline" data-phase="01">
+          <div class="timeline-step sc-timeline">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <span class="phase-label">Vaihe 01</span>
@@ -226,7 +186,7 @@
             </div>
           </div>
 
-          <div class="timeline-step sc-timeline" data-phase="02">
+          <div class="timeline-step sc-timeline">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <span class="phase-label">Vaihe 02</span>
@@ -237,7 +197,7 @@
             </div>
           </div>
 
-          <div class="timeline-step sc-timeline" data-phase="03">
+          <div class="timeline-step sc-timeline">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <span class="phase-label">Vaihe 03</span>
@@ -248,7 +208,7 @@
             </div>
           </div>
 
-          <div class="timeline-step sc-timeline" data-phase="04">
+          <div class="timeline-step sc-timeline">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <span class="phase-label">Vaihe 04</span>
@@ -266,8 +226,7 @@
     <section class="contact" id="contact">
       <div class="container">
         <div class="contact-header sc-reveal">
-          <span class="overline">Ota yhteyttä</span>
-          <h2 class="section-heading">Pyydä<br/>yhteydenotto</h2>
+          <h2 class="section-heading">Pyydä yhteydenotto</h2>
           <p class="body-lg">Aloita keskustelu tulevasta kehityshankkeestasi.</p>
         </div>
 
@@ -297,9 +256,8 @@
             <textarea id="project" name="project" rows="4" placeholder="Kuvaile lyhyesti laajuus ja mittakaava..."></textarea>
           </div>
           <div class="form-submit">
-            <button type="submit" class="btn-primary btn-primary--submit">
+            <button type="submit" class="btn-primary">
               Lähetä pyyntö
-              <span class="material-symbols-outlined btn-icon">send</span>
             </button>
           </div>
         </form>
