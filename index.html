@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Sane Consulting — Architectural Project Management</title>
+  <meta name="description" content="Sane Consulting delivers architectural project management with meticulous planning, structural excellence, and expert site supervision from first draft to final handover."/>
+  <meta name="keywords" content="Sane Consulting, architectural project management, construction supervision, budget management, site supervision"/>
+  <meta property="og:title" content="Sane Consulting — Architectural Project Management"/>
+  <meta property="og:description" content="Construction project management for those who value peace of mind and structural excellence."/>
+  <meta property="og:type" content="website"/>
+  <link rel="canonical" href="https://iblybibly1.github.io/SaneConsulting/"/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Page loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-wordmark">Sane</span>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="mainNav">
+    <div class="header-inner">
+      <a class="wordmark" href="#">Sane Consulting</a>
+
+      <nav class="nav-links" id="navLinks">
+        <a class="nav-link" href="#portfolio" data-nav>Portfolio</a>
+        <a class="nav-link" href="#methodology" data-nav>Methodology</a>
+        <a class="nav-link active" href="#expertise" data-nav>Expertise</a>
+        <a class="nav-link" href="#process" data-nav>Process</a>
+      </nav>
+
+      <a class="btn-ghost nav-cta" href="#contact">Request Callback</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#portfolio" class="mobile-link">Portfolio</a>
+      <a href="#methodology" class="mobile-link">Methodology</a>
+      <a href="#expertise" class="mobile-link">Expertise</a>
+      <a href="#process" class="mobile-link">Process</a>
+      <a href="#contact" class="mobile-link mobile-cta">Request Callback</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 1. HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img
+          class="hero-img"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ-wzPTBHKXavwMt8Ex1zhpMc9CU5e03Fc6LrEPxIMyZ1SOClSFX0BuguMOuS47R59epwsUErIORaIyQadV7_SLXxfLrcQWH2lY-tM4uIPsT9jWxmHamegfFL8JLsAmxD_QCJbCn3JTQDO1ScfrR9F7YgwegZv-3sFUZjm3jX0wwglEVoWpdtfoGZL4Gdh51ZIfMNIdEUziUUi6-QkqfDRabIMvVVhz2uSmeBhjSa6DObYuNvt9ohVzhzpADHRTqbKurtSNY8IG9s"
+          alt="Minimalist architectural interior with floor-to-ceiling windows, concrete lines, moody lighting"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content container">
+        <div class="hero-text">
+          <span class="overline reveal-line" data-delay="0">Architectural Project Management</span>
+          <h1 class="hero-heading">
+            <span class="reveal-line" data-delay="0.1">Your Vision,</span>
+            <span class="reveal-line italic" data-delay="0.2">Orchestrated</span>
+            <span class="reveal-line" data-delay="0.3">with Precision.</span>
+          </h1>
+          <p class="hero-sub reveal-fade" data-delay="0.55">
+            Construction project management for those who value<br/>
+            peace of mind and structural excellence.
+          </p>
+          <div class="hero-actions reveal-fade" data-delay="0.7">
+            <a class="btn-primary" href="#contact">
+              Discuss Your Project
+              <span class="material-symbols-outlined btn-icon">arrow_forward</span>
+            </a>
+            <a class="btn-text" href="#expertise">View Expertise</a>
+          </div>
+        </div>
+
+        <div class="hero-stat-row reveal-fade" data-delay="0.9">
+          <div class="hero-stat">
+            <span class="stat-number" data-count="150">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="stat-number" data-count="18">0</span><span class="stat-plus">yrs</span>
+            <span class="stat-label">Industry Experience</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="stat-number" data-count="99">0</span><span class="stat-plus">%</span>
+            <span class="stat-label">On-Time Delivery</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint reveal-fade" data-delay="1.1">
+        <span class="scroll-hint-line"></span>
+        <span class="scroll-hint-text">Scroll</span>
+      </div>
+    </section>
+
+    <!-- 2. PHILOSOPHY -->
+    <section class="philosophy" id="methodology">
+      <div class="container philosophy-grid">
+        <div class="philosophy-label-col">
+          <span class="overline sc-reveal">Our Philosophy</span>
+          <div class="accent-line sc-reveal"></div>
+        </div>
+        <div class="philosophy-text-col">
+          <blockquote class="philosophy-quote sc-reveal">
+            "Well planned<br/><em>is half done."</em>
+          </blockquote>
+          <p class="body-lg sc-reveal">
+            We believe that true architectural excellence is born from rigorous
+            preparation. By anticipating challenges before they manifest, we protect
+            both the design integrity and your investment.
+          </p>
+          <div class="philosophy-tag-row sc-reveal">
+            <span class="tag">Structural Integrity</span>
+            <span class="tag">Precision</span>
+            <span class="tag">Reliability</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. EXPERTISE (BENTO) -->
+    <section class="expertise" id="expertise">
+      <div class="container">
+        <div class="section-header sc-reveal">
+          <span class="overline">Expertise</span>
+          <h2 class="section-heading">Core Pillars<br/>of Practice</h2>
+        </div>
+
+        <div class="bento-grid">
+          <div class="bento-card bento-a sc-reveal-card">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEA6gFK_BcLUKUHqhQhFUxjAJqxcOhFGuQuqlE55FHtW-sZp64yjnPx-N8-ub6Rfcwo48Pe3Z_XALXGAnI-4QsmrkbpjQwvtOj1jlxkLAXAak8LUqvjHkaBPUb0ZTH7X1nV18fF1Mn1FRInQLtvfxebSpjj868vwqfvuocg6N5v21Ynh1iVqxa_0AsKnbdSWdRceQRUHlJXLN7P-6y1hivHOn-a7rZBf1XoFMuLVWgsozQbbAZHaC7voLlG5TMmFFejVDURHVnPuM"
+              alt="Modern construction site at twilight — structural steel beams"
+              class="bento-img"
+            />
+            <div class="bento-img-overlay"></div>
+            <div class="bento-card-body">
+              <h3 class="bento-title">Project Management</h3>
+              <p class="bento-desc">Strategic oversight from first draft to completion. We act as your definitive representative on-site.</p>
+            </div>
+          </div>
+
+          <div class="bento-card bento-b sc-reveal-card">
+            <span class="material-symbols-outlined bento-icon">analytics</span>
+            <h3 class="bento-title">Budget &amp; Schedule</h3>
+            <p class="bento-desc">
+              Ensuring every milestone is met without compromise. Financial forecasting and timeline adherence mapped with structural precision.
+            </p>
+            <div class="bento-card-footer">
+              <a class="link-arrow" href="#process">
+                View Methodology <span class="material-symbols-outlined">arrow_outward</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="bento-card bento-c sc-reveal-card">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4pi-0iotkY0fjmmXRyLvCywTKHR6GTlh051W-PyQav4_LREN02d58c1VjrfpBVmYJymTg7tsM0UIbt-5GuLfrmpChc83Z7ER6IYp0rsaD1wqQ1yn0SRu7hS97MVqUclC7OhWWJ9J6np_ePZPnaMyjIFwGlsp1IVGRy5yYIBUj28Kx6f52fot8GHN1Fbs8YEjthmmoO_-hrNAdzNHnffYZBZ-EZ_1BVAGXqi0VphhXFi_KJKa13qO0Rf1BdSqgVp4GC7DMFDlg1GM"
+              alt="Architectural blueprints on dark wood table with premium drafting tools"
+              class="bento-img"
+            />
+            <div class="bento-img-overlay bento-img-overlay--side"></div>
+            <div class="bento-card-body bento-card-body--side">
+              <span class="material-symbols-outlined bento-icon">engineering</span>
+              <h3 class="bento-title">Site Supervision</h3>
+              <p class="bento-desc">Rigorous quality control and professional inspections. We demand exact execution of the architectural intent.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROCESS (TIMELINE) -->
+    <section class="process" id="process">
+      <div class="container process-grid">
+        <div class="process-sidebar">
+          <span class="overline sc-reveal">Process</span>
+          <h2 class="section-heading sc-reveal">The Sane<br/>Method</h2>
+          <p class="body-md sc-reveal">
+            A refined, step-by-step timeline designed to mitigate risk and elevate build quality through systemic oversight.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-track"></div>
+
+          <div class="timeline-step sc-timeline" data-phase="01">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="phase-label">Phase 01</span>
+              <h3 class="timeline-title">Pre-Construction Analysis</h3>
+              <p class="body-md">
+                Comprehensive review of architectural drawings, feasibility studies, and initial budget formulation to establish a solid foundational baseline.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-step sc-timeline" data-phase="02">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="phase-label">Phase 02</span>
+              <h3 class="timeline-title">Procurement &amp; Bidding</h3>
+              <p class="body-md">
+                Strategic selection of contractors and vendors based on rigorous qualification criteria, ensuring alignment with project standards.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-step sc-timeline" data-phase="03">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="phase-label">Phase 03</span>
+              <h3 class="timeline-title">Execution &amp; Supervision</h3>
+              <p class="body-md">
+                Active on-site management, enforcing schedule adherence, quality control parameters, and facilitating real-time problem resolution.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-step sc-timeline" data-phase="04">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="phase-label">Phase 04</span>
+              <h3 class="timeline-title">Handover &amp; Commissioning</h3>
+              <p class="body-md">
+                Final inspections, defect rectification, and seamless transition of the completed asset to the client.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-header sc-reveal">
+          <span class="overline">Get in Touch</span>
+          <h2 class="section-heading">Request<br/>Callback</h2>
+          <p class="body-lg">Initiate a dialogue regarding your prospective development.</p>
+        </div>
+
+        <form class="contact-form sc-reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name"/>
+            </div>
+            <div class="form-field">
+              <label for="company">Company / Organization</label>
+              <input type="text" id="company" name="company" placeholder="Optional"/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email"/>
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter phone number" autocomplete="tel"/>
+            </div>
+          </div>
+          <div class="form-field form-field--full">
+            <label for="project">Project Outline</label>
+            <textarea id="project" name="project" rows="4" placeholder="Briefly describe the scope and scale..."></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn-primary btn-primary--submit">
+              Submit Request
+              <span class="material-symbols-outlined btn-icon">send</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <span class="wordmark">Sane Consulting</span>
+        <p class="footer-copy">© 2024 Sane Consulting. Architectural Excellence in Project Management.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+      </nav>
+      <div class="footer-social">
+        <a href="#">LinkedIn</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
