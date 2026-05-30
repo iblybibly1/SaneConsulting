@@ -224,7 +224,7 @@
       e.preventDefault();
       const btn = form.querySelector('button[type="submit"]');
       const orig = btn.innerHTML;
-      btn.innerHTML = 'Sent <span class="material-symbols-outlined btn-icon">check_circle</span>';
+      btn.innerHTML = 'Lähetetty <span class="material-symbols-outlined btn-icon">check_circle</span>';
       btn.disabled = true;
       setTimeout(() => { btn.innerHTML = orig; btn.disabled = false; form.reset(); }, 3200);
     });
